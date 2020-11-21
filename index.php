@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
     <title>Games</title>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img src="assets/icons/icon-principal.png" width="30" height="30" alt="" loading="lazy"> VideoGames
@@ -28,7 +26,7 @@
                     <a class="nav-link active" href="#">Juegos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Clientes</a>
+                    <a class="nav-link active" href="clientes/cliente.html">Clientes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Listado de juegos por categoria</a>
@@ -36,7 +34,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
-              </a>
+                </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
@@ -45,6 +43,7 @@
                     </div>
                 </li>
             </ul>
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -117,6 +116,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/theking.jpg" focusable="false" role="img" aria-label="Placeholder: FIFA 20">
@@ -134,6 +134,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="assets/img/halo5.png" focusable="false" role="img" aria-label="Placeholder: FIFA 20">
@@ -216,7 +217,5 @@
         </div>
     </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 </html>
