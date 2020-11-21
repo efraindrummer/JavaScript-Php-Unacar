@@ -1,3 +1,8 @@
 <?php 
-    $connection = $mysqli_connect('localhost','jsfinal','qwerty','gamestore');
+    $host = 'localhost';
+    $username = 'jsfinal';
+    $password = 'qwerty';
+    $db = 'gamestore';
+
+    $connection = mysqli_connect($host,$username,$password,$db);
 ?>

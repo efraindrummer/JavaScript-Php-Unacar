@@ -1,5 +1,10 @@
 <?php 
-    include("./conexion/conexion.php");
+    $host = 'localhost';
+    $username = 'jsfinal';
+    $password = 'qwerty';
+    $db = 'gamestore';
+
+    $connection = mysqli_connect($host,$username,$password,$db);
 
     $search = $_POST['search'];
 
@@ -17,7 +22,7 @@
             
             $json[] = array(
                 'nombre_cliente' => $row['nombre_cliente'],
-                'apellidos' => $row['apellidos'],
+                'apellido_cliente' => $row['apellido_cliente'],
                 'id_cliente' => $row['id_cliente']
             );
         }

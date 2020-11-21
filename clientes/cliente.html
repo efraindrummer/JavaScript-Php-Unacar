@@ -19,12 +19,12 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container p-4">
         <div class="row">
-            <div class="col-md-5 mt-5">
+            <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
-                        <form id="cliente-form">
+                        <form id="client-form" name="client-form">
                             <div class="form-group">
                                 <label for="">Nombre</label>
                                 <input type="text" id="nombre" placeholder="ingrese su nombre" class="form-control">
@@ -50,6 +50,12 @@
         </div>
 
         <div class="col-ms-7">
+
+            <div class="card my-4" id="clientes-result">
+                <div class="card-body">
+                    <ul id="container"></ul>
+                </div>
+            </div>
             
             <table class="table table-bordered table-sm mt-5">
                 <thead>
