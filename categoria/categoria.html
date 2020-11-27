@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-    <title>Clientes</title>
+    <title>Categoria</title>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Clientes</a>
+        <a href="#" class="navbar-brand">Categoria</a>
         
         <ul class="navbar-nav ml-auto">
             <form class="form-inline my-2 my-lg-0">
@@ -21,27 +21,16 @@
 
     <div class="container p-4">
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <a href="./../index.php" class="btn btn-success btn-block">Menu Principal</a>
                 <hr>
                 <div class="card">
                     <div class="card-body">
-                        <form id="client-form" name="client-form">
+                        <form id="category-form" name="category-form">
+                            
                             <div class="form-group">
-                                <label for="">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Apellidos</label>
-                                <input type="text" id="apellidos" name="apellidos" placeholder="ingrese sus apellidos" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Edad</label>
-                                <input type="number" id="edad" name="edad" placeholder="18" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Fecha de registro</label>
-                                <input type="date" id="fecha_registro" name="fecha_registro" class="form-control">
+                                <label for="">Categoria</label>
+                                <input type="text" id="categoria" name="categoria" placeholder="registre una categoria" class="form-control">
                             </div>
 
                             <button type="submit" class="btn btn-info btn-block text-center">Insertar</button>
@@ -51,25 +40,22 @@
             </div>
         </div>
 
-        <div class="col-ms-7">
+        <div class="col-md-6">
 
-            <div class="card my-4" id="clientes-result">
+           <!--  <div class="card my-4" id="category-result">
                 <div class="card-body">
                     <ul id="container"></ul>
                 </div>
-            </div>
+            </div> -->
             
             <table class="table table-bordered table-sm mt-5">
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nombre</th>
-                        <th>APELLIDOS</th>
-                        <th>EDAD</th>
-                        <th>FECHA DE REGISTRO</th>
+                        <th>CATEGORIA</th>
                     </tr>
                 </thead>
-                <tbody id="clientes-list">
+                <tbody id="category-list">
 
                 </tbody>
             </table>

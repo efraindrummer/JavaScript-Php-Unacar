@@ -6,7 +6,7 @@
 
     $connection = mysqli_connect($host,$username,$password,$db);
 
-    $query = "SELECT * FROM clientes";
+    $query = "SELECT * FROM juegos";
     $result = mysqli_query($connection, $query);
 
     if(!$result){
@@ -16,11 +16,11 @@
     $json = array();
     while($row = mysqli_fetch_array($result)){
         $json[] = array(
-            'id_cliente' => $row['id_cliente'],
-            'nombre_cliente' => $row['nombre_cliente'],
-            'apellido_cliente' => $row['apellido_cliente'],
-            'edad' => $row['edad'],
-            'fecha_registro' => $row['fecha_registro']
+            'id_juego' => $row['id_juego'],
+            'nombre_juego' => $row['nombre_juego'],
+            'descripcion_juego' => $row['descripcion_juego'],
+            'fecha_lanzamiento' => $row['fecha_lanzamiento'],
+            'precio' => $row['precio']
         );
     }
 
