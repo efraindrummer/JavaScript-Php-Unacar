@@ -27,20 +27,19 @@ $(document).ready(function () {
         }
     });
 
-    $('#client-insert-form').submit(function(e) {
-
+    $('#client-form').submit(function(e) {
         const postData = {
             nombre_cliente: $('#nombre_cliente').val(),
             apellido_cliente: $('#apellido_cliente').val(),
             edad: $('#edad').val(),
             fecha_registro: $('#fecha_registro').val()
         };
-
         $.post('cliente-agregar.php', postData, function (response) {
-
-            $('#client-insert-form').trigger('reset');
+            console.log(response);
+            $('#client-form').trigger('reset');
         });
         e.preventDefault();
+        
     });
 
     $.ajax({

@@ -20,7 +20,7 @@
             'nombre_juego' => $row['nombre_juego'],
             'descripcion_juego' => $row['descripcion_juego'],
             'fecha_lanzamiento' => $row['fecha_lanzamiento'],
-            'precio' => $row['precio']
+            'precio' => $row['precio'],
         );
     }
 

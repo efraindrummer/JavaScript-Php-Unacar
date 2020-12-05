@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
-    <title>Clientes</title>
+    <title>Juegos</title>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">Clientes</a>
-        
+        <a href="#" class="navbar-brand">Juegos</a>
+        <a href="./../index.php" class="btn btn-info">Menu Principal</a>
         <ul class="navbar-nav ml-auto">
             <form class="form-inline my-2 my-lg-0">
                 <input type="search" id="search" class="form-control mr-sm-2" placeholder="Busca un cliente">
@@ -22,26 +22,41 @@
     <div class="container p-4">
         <div class="row">
             <div class="col-md-5">
-                <a href="./../index.php" class="btn btn-success btn-block">Menu Principal</a>
+                
                 <hr>
                 <div class="card">
                     <div class="card-body">
-                        <form id="client-form" name="client-form">
+                        <form id="juegos-form">
                             <div class="form-group">
                                 <label for="">Nombre</label>
-                                <input type="text" id="nombre_juego" name="nombre_juego" placeholder="ingrese su nombre" class="form-control">
+                                <input type="text" id="nombre_juego" name="nombre_juego" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="">Descripcion</label>
-                                <input type="text" id="descripcion_juego" name="descripcion_juego" placeholder="ingrese sus apellidos" class="form-control">
+                                <input type="text" id="descripcion_juego" name="descripcion_juego" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Edad</label>
-                                <input type="number" id="edad" name="edad" placeholder="18" class="form-control">
+                                <label for="">Fecha Lanzamiento</label>
+                                <input type="date" id="fecha_lanzamiento" name="fecha_lanzamiento" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Fecha de registro</label>
-                                <input type="date" id="fecha_registro" name="fecha_registro" class="form-control">
+                                <label for="">Precio</label>
+                                <input type="text" id="precio" name="precio" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">Seleccionar Categoria:</label>
+                                <select class="form-control" name="GATEGORIA_id_categoria" id="GATEGORIA_id_categoria">
+                                    <option value="1">GUERRA</option>
+                                    <option value="2">FANTASIA</option>
+                                    <option value="3">ACCION</option>
+                                    <option value="4">CARRERAS</option>
+                                    <option value="5">AVENTURA</option>
+                                    <option value="6">DEPORTES</option>
+                                    <option value="7">FICCION</option>
+                                    <option value="8">ESTRATEGIAS</option>
+                                    <option value="9">LUCHA</option>
+                                    <option value="10">TERROR</option>
+                                </select>
                             </div>
 
                             <button type="submit" class="btn btn-info btn-block text-center">Insertar</button>

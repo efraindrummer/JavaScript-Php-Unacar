@@ -109,7 +109,7 @@
                                     (en la cual fue censurado por un año) y PlayStation Portable.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-link">Ver</button>
+                                        <button type="button" class="btn btn-link"><a href="game.html">Ver</a></button>
                                     </div>
                                     <small class="text-muted">2010</small>
                                 </div>
@@ -213,7 +213,6 @@
         <div class="container text-center">
             <p>Desarrollo de Aplicaciones con Javascript - Mtro: Jesus Alejandro Flores</p>
             <p>Efrain May Mayo - 170869 - ing. en computacion <a href="https://efraindrummer-page-pwa.web.app/" target="_blank">Visita Mi Pagina</a></p>
-            <p>Alex Xander Del Carmen Velueta Magaña - 161148 - ing. en sistemas computacionales</p>
         </div>
     </footer>
 </body>

@@ -10,6 +10,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="#" class="navbar-brand">Clientes</a>
+        <a href="./../index.php" class="btn btn-info">Menu Principal</a>
         
         <ul class="navbar-nav ml-auto">
             <form class="form-inline my-2 my-lg-0">
@@ -19,34 +20,35 @@
         </ul>
     </nav>
 
-    <div class="container p-4">
-        <div class="row">
+    <div class="container">
+        <div class="row p-4">
             <div class="col-md-5">
-                <a href="./../index.php" class="btn btn-success btn-block">Menu Principal</a>
                 <hr>
+                <!-- ------------------------------------- -->
                 <div class="card">
                     <div class="card-body">
-                        <form id="client-insert-form" name="client-form">
+                        <form id="client-form">
                             <div class="form-group">
-                                <label for="">Nombre</label>
-                                <input type="text" id="nombre_cliente" name="nombre_cliente" placeholder="ingrese su nombre" class="form-control">
+                                <label>Nombre</label>
+                                <input type="text" id="nombre_cliente" placeholder="ingrese su nombre" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Apellidos</label>
-                                <input type="text" id="apellido_cliente" name="apellido_cliente" placeholder="ingrese sus apellidos" class="form-control">
+                                <label>Apellidos</label>
+                                <input type="text" id="apellido_cliente" placeholder="ingrese sus apellidos" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Edad</label>
-                                <input type="number" id="edad" name="edad" placeholder="18" class="form-control">
+                                <label>Edad</label>
+                                <input type="text" id="edad" placeholder="18" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Fecha de registro</label>
-                                <input type="date" id="fecha_registro" name="fecha_registro" class="form-control">
+                                <label>Fecha de registro</label>
+                                <input type="date" id="fecha_registro" class="form-control">
                             </div>
 
                             <button type="submit" class="btn btn-info btn-block text-center">Insertar</button>
                         </form>
                     </div>
+                    <!-- ---------------------------------------------------- -->
                 </div>
             </div>
         </div>
@@ -63,7 +65,7 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nombre</th>
+                        <th>NOMBRE</th>
                         <th>APELLIDOS</th>
                         <th>EDAD</th>
                         <th>FECHA DE REGISTRO</th>

@@ -1,5 +1,4 @@
 <?php 
-    //include("conexion/conexion.php");
 
     $host = 'localhost';
     $username = 'jsfinal';
@@ -8,16 +7,20 @@
 
     $connection = mysqli_connect($host,$username,$password,$db);
 
-    if(isset( $_POST['nombre_cliente'])){
+    if(isset($_POST['nombre_cliente'])){
         $nombre_cliente = $_POST['nombre_cliente'];
         $apellido_cliente = $_POST['apellido_cliente'];
         $edad = $_POST['edad'];
         $fecha = $_POST['fecha_registro'];
-        $query = "INSER INTO cliente(nombre_cliente, apellido_cliente, edad, fecha_registro) VALUES ('$nombre_cliente','$apellido_cliente','$edad','$fecha')";
+
+        $query = "INSERT INTO juegos(nombre_cliente, apellido_cliente, edad, fecha_registro) VALUES ('$nombre_cliente','$apellido_cliente','$edad','$fecha')";
         $result = mysqli_query($connection, $query);
         if(!$result){
             die('La consulta ha fallado.');
         }
-        echo "Datos enviados correctamente";
+        echo "
+            <script>
+                alert('Insertado Correctamente');
+            </script>";
     }
 ?>
